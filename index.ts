@@ -10,7 +10,9 @@ import cors from "cors";
 dotenv.config();
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/url-custom")
+  .connect(
+    "mongodb+srv://bookeyadmin:TSbOVi2OZCen1O8h@cluster0.ef0ubfv.mongodb.net/url-custom?retryWrites=true&w=majority"
+  )
   .then(() => console.log("Connected successfully"));
 
 const app = express();
